@@ -15,10 +15,12 @@
     <link href="{!! url('public/home/css/bootstrap.css') !!}" rel="stylesheet">
     <link href="{!! url('public/home/css/shop-homepage.css') !!}" rel="stylesheet">
     <link href="{!! url('public/home/css/3-col-portfolio.css') !!}" rel="stylesheet">
+    <link href="{!! url('public/home/css/stylish-portfolio.css') !!}" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="{!! url('public/home/css/scrolling-nav.css') !!}" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fugaz+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Infant|Fugaz+One|Oswald" rel="stylesheet">
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -27,8 +29,10 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 <style type="text/css">
-    .navbar-brand page-scroll:hover{
-        color: #111;
+    #map_canvas {
+           width: 100%;
+           height: 300px;
+           border:solid 1px #ccc;
     }
 </style>
 </head>
@@ -105,7 +109,7 @@
     </div>
 
     <!-- Intro Section -->
-    <section id="intro" class="intro-section">
+    <section id="intro" class="intro-section" style="height: 410px;">
         <div class="col-md-10 col-md-offset-1">
             <div class="row">
                 <div class="col-md-10">
@@ -135,7 +139,7 @@
                         <!-- Page Header -->
                         <div class="row">
                             <div class="col-lg-12">
-                                <h1 class="page-header" style="font-family: 'Oswald', sans-serif;">TIN TỨC 24h
+                                <h1 class="page-header" style="font-family: 'Oswald', sans-serif;">TIN TỨC
                                 </h1>
                             </div>
                         </div>
@@ -250,13 +254,20 @@
             </div>
         </div>
     </section>
+
+    <!--Map-->
+    <iframe src="https://www.google.com/maps/d/embed?mid=14Lqg-tTETf_aV3hH5PacaGFo-GQ" style="height: 450px; width: 100%; "></iframe>
+
     <hr>
     <!-- Footer -->
         <footer>
-            <div class="col-md-10 col-md-offset-1">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <p>Copyright &copy; Your Website 2014</p>
+            <div class="container">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="row">
+                    
+                        <div class="col-lg-12">
+                            <p>Copyright &copy; Your Website 2014</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -272,7 +283,7 @@
     <!-- Scrolling Nav JavaScript -->
     <script src="{!! url('public/home/js/jquery.easing.min.js') !!}"></script>
     <script src="{!! url('public/home/js/scrolling-nav.js') !!}"></script>
-    
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 
 </body>
 
