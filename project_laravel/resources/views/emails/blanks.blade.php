@@ -1,0 +1,1 @@
+Chúng tôi đã được yêu cầu của quý khách {{ $hoten }}. Chúng tôi sẽ liên lạc ngay với quý khách!
